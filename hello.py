@@ -2,57 +2,34 @@
 
 print 'Content-type: text/html'
 print ''
-# print 'Hello Python!'
 
-age = 35
+# for i in range(11):
+for i in range(5,11):
+  print i
+  print "Rob"
 
-print age
+print "Sam"
 
-print ''
+list = ["pizza","chocholate","ice cream"]
 
-pi = 3.14
+print "<br>"
+for food in list:
+  print "I like eating " + food + "."
+  print "<br>"
 
-print pi
 
-name = "Rob"
+x = 0
+while x <= 10:
+  print x
+  x = x + 1
+  # x += 1
+print "<br>"
 
-print name
+ages = {}
+ages["Rob"] = 35
+ages["Kirsten"] = 36
+ages["Tommy"] = 5
+ages["Rophie"] = 1
 
-print age/pi
-
-number = "5"
-
-print number * age
-
-print '<br>'
-
-print int(number) * 5
-
-print int(number) * age
-
-print int(number) * pi
-
-str = "My name is Rob"
-
-print str[0]
-print str[0:6]
-print str[5]
-
-mylist = ["Apple", "banana", "orange"]
-print mylist
-print mylist[1]
-print mylist[1:4]
-
-myTuple = (1,2,3,4)
-print myTuple
-
-dict = {}
-dict["dad"] = "Rob"
-dict["mum"] ="Kirsten"
-dict[1] = "Tommy"
-dict[2] = "Raphie"
-
-print dict
-print dict["mum"]
-print dict.keys()
-print dict.values()
+for age in ages:
+ print age + " is " + str(ages[age]) + "."
